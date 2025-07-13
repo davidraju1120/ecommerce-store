@@ -1,25 +1,42 @@
 {
-  "name": "e-commercewebsite",
+  "name": "advanced-ecommerce-store",
   "version": "1.0.0",
-  "description": "A mobile responsive sample of E-Commerce Website using HTML, CSS, JavaScript and API's",
-  "main": "cart.js",
+  "description": "Advanced E-commerce Store with customizable views, search, cart management, checkout, and payment integration",
+  "main": "index.js",
   "scripts": {
     "dev": "vite",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "jest"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lassiecoder/E-CommerceWebsite.git"
-  },
-  "keywords": [],
+  "keywords": ["ecommerce", "react", "typescript", "vite", "stripe"],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/lassiecoder/E-CommerceWebsite/issues"
-  },
-  "homepage": "https://github.com/lassiecoder/E-CommerceWebsite#readme",
+  "type": "module",
   "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.0",
+    "axios": "^1.6.0",
+    "styled-components": "^6.1.0",
+    "framer-motion": "^10.16.0",
+    "react-icons": "^4.12.0",
+    "react-hot-toast": "^2.4.1",
+    "zustand": "^4.4.0",
+    "stripe": "^14.9.0",
+    "@stripe/stripe-js": "^2.4.0",
+    "react-query": "^3.39.3"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitejs/plugin-react": "^4.0.0",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "typescript": "^5.0.2",
     "vite": "^7.0.2"
   }
 }
